@@ -17,22 +17,22 @@ class Contact extends React.Component {
                         <Grid.Row columns={1}>
                             <Grid.Column>
                                 <Menu.Item as='a' href='mailto: oliver.seq@gmail.com' target='_blank'>
-                                    <Icon name='mail' size='massive' link/>
+                                    <Icon name='mail' size='huge' link/>
                                 </Menu.Item>
                             </Grid.Column>
                             <Grid.Column>
                                 <Menu.Item as='a' href='https://linkedin.com/in/oliver-de-sousa' target='_blank'>
-                                    <Icon name='linkedin' size='massive' link/>
+                                    <Icon name='linkedin' size='huge' link/>
                                 </Menu.Item>
                             </Grid.Column>
                             <Grid.Column>
                                 <Menu.Item as='a' href='https://github.com/OllyDS' target='_blank'>
-                                    <Icon name='github' size='massive' link/>
+                                    <Icon name='github' size='huge' link/>
                                 </Menu.Item>
                             </Grid.Column>
                             <Grid.Column>
                                 <Menu.Item as='a' href='https://medium.com/@oliver.seq' target='_blank'>
-                                    <Icon name='blogger' size='massive' link/>
+                                    <Icon name='blogger' size='huge' link/>
                                 </Menu.Item>
                             </Grid.Column>
                         </Grid.Row>

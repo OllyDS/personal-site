@@ -74,11 +74,23 @@
   color: black;
 }
 
-.github.huge.icon, .mail.huge.icon, .linkedin.huge.icon, .blogger.huge.icon,
-.github.massive.icon, .mail.massive.icon, .linkedin.massive.icon, .blogger.massive.icon {
+.github.huge.icon, .mail.huge.icon, .linkedin.huge.icon, .blogger.huge.icon {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   color: #282c34;
 }
 
+
+/* -*-*- CV PAGE -*-*- */
+
+.ui.horizontal.divider.cv-divider {
+  padding-top: 2em;
+  padding-bottom: 1em
+}
+
+.bio {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.1em
+}
