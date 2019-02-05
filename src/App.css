@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+/* --- Navbar --- */
+.ui.inverted.segment {
+  border-radius: 0;
+  margin-bottom: 0px
+}
+
+
+/* -*-*-HOME PAGE-*-*- */
+
+/* ---Intro Text--- */
+.heading-about-me {
+  font-family: Roboto;
+  font-size: 4vw;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* ---Skill Icon Images--- */
+.lang-icons-parent {
+  display: grid;
+}
+
+.ui.image.desktop-icons {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 0.5px;
+}
+
+.ui.image.mobile-icons {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 3vh;
+}
+
+/* ---Page Dividers--- */
+.ui.horizontal.divider {
+  line-height: 3;
+}
+
+
+
+/* -*-*- CONTACT PAGE -*-*- */
+
+.contact-page {
+  text-align: center;
+  padding-top: 25%
+}
+
+.contact-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 6em;
+  font-weight: 800;
+  color: black;
+}
+
+.github.huge.icon, .mail.huge.icon, .linkedin.huge.icon, .blogger.huge.icon {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #282c34;
+}
