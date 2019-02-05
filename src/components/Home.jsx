@@ -54,7 +54,7 @@ class Home extends React.Component {
                     </Container>
                 </Mobile>
                 <Desktop>
-                    <Image src='/images/marble-img.jpg' className='homepage-image' alt='picture of marble surface'/>
+                    <Image src='/images/london-wide.jpg' className='homepage-image' alt='picture of marble surface'/>
                     <div className='heading-about-me'>
                         <p>Hello, I'm Oliver, a junior software developer living in London. Please feel free to explore my projects and get in touch.</p>
                     </div>
