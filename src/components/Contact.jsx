@@ -13,22 +13,28 @@ class Contact extends React.Component {
                     <div className='contact-text'>
                         <p>hello.</p>
                     </div>
-                    <Grid className='contact-icons'>
-                        <Grid.Row centered columns={2}>
-                            <Icon.Group>
+                    <Grid>
+                        <Grid.Row columns={1}>
+                            <Grid.Column>
                                 <Menu.Item as='a' href='mailto: oliver.seq@gmail.com' target='_blank'>
-                                    <Icon name='mail' size='huge' link />
+                                    <Icon name='mail' size='massive' link/>
                                 </Menu.Item>
+                            </Grid.Column>
+                            <Grid.Column>
                                 <Menu.Item as='a' href='https://linkedin.com/in/oliver-de-sousa' target='_blank'>
-                                    <Icon name='linkedin' size='huge' link/>
+                                    <Icon name='linkedin' size='massive' link/>
                                 </Menu.Item>
+                            </Grid.Column>
+                            <Grid.Column>
                                 <Menu.Item as='a' href='https://github.com/OllyDS' target='_blank'>
-                                    <Icon name='github' size='huge' link/>
+                                    <Icon name='github' size='massive' link/>
                                 </Menu.Item>
+                            </Grid.Column>
+                            <Grid.Column>
                                 <Menu.Item as='a' href='https://medium.com/@oliver.seq' target='_blank'>
-                                    <Icon name='blogger' size='huge' link/>
+                                    <Icon name='blogger' size='massive' link/>
                                 </Menu.Item>
-                            </Icon.Group>
+                            </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </Container>

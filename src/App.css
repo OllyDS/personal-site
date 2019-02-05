@@ -14,8 +14,16 @@
 /* ---Intro Text--- */
 .heading-about-me {
   font-family: Roboto;
+  font-size: 2em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.heading-about-me-mobile {
+  font-family: Roboto;
   font-size: 4vw;
   padding: 0.5em;
+  padding-top: 2em;
   text-align: center;
 }
 
@@ -31,8 +39,8 @@
 }
 
 .ui.image.mobile-icons {
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   margin-bottom: 3vh;
 }
 
@@ -41,9 +49,18 @@
   line-height: 3;
 }
 
+.project-container {
+  padding-top: 1em;
+  padding-bottom: 1em
+}
+
 
 
 /* -*-*- CONTACT PAGE -*-*- */
+
+.column.mob-col {
+  text-align: center
+}
 
 .contact-page {
   text-align: center;
@@ -57,9 +74,11 @@
   color: black;
 }
 
-.github.huge.icon, .mail.huge.icon, .linkedin.huge.icon, .blogger.huge.icon {
+.github.huge.icon, .mail.huge.icon, .linkedin.huge.icon, .blogger.huge.icon,
+.github.massive.icon, .mail.massive.icon, .linkedin.massive.icon, .blogger.massive.icon {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   color: #282c34;
 }
+
