@@ -14,9 +14,9 @@ const CV = () => {
                     </Divider>
                     <div className='descriptive-text'>
                         <p>I'm a junior programmer with a background in finance, where I worked as a currency trader and consultant.
-                        During this time, I got to work closely with different development teams and software engineers, which kicked off my love afair with coding.</p>
-                        <p>After learning to write database queries in SQL and trying to teach myself C++ in the evenings, I decided to take the plunge and fully commit myself to becoming a developer and enrolled in the Flatiron bootcamp.
-                        I have a real passion for creating things and helping to solve challenges, and enjoy working in collaborative environements where teamwork is promoted.</p>
+                        During this time, I got to work closely with different development teams and software engineers, which sparked my love affair with coding.</p>
+                        <p>After learning to write database queries in SQL and trying to teach myself C++ in the evenings, I decided to take the plunge and fully commit to becoming a developer, enrolling in the Flatiron bootcamp.
+                        I have a real passion for creating things and helping to solve challenges, and enjoy working in collaborative environments where teamwork is promoted.</p>
                     </div>
                     <Divider horizontal className='cv-divider'>
                         <Header as='h2'>Technical Experience</Header>
@@ -72,6 +72,19 @@ const CV = () => {
                                 <li>Trained a junior member of staff to become an execution trader.</li>
                                 <li>Trained a junior member of staff to become an execution trader.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <Divider horizontal className='cv-divider'>
+                        <Header as='h2'>Volunteer Work</Header>
+                    </Divider>
+                    <div className='experience-container'>
+                        <Header as='h2'>Codebar
+                            <Header.Subheader>Coach</Header.Subheader>
+                        </Header>
+                        <div className='descriptive-text'>
+                            <p>I volunteer at Codebar, helping people learn how to code who are just starting out in Ruby, JavaScript or React.
+                                It's a great experience with a friendly crowd, so if you're an experienced developer or looking to learn,
+                                I'd highly recommend coming along one evening.</p>
                         </div>
                     </div>
                 </Container>
@@ -156,6 +169,29 @@ const CV = () => {
                                 <li>Created a wide array of models in Excel that were used to monitor asset exposure in real time across multiple asset classes, reconcile internal and external hedge accounts to avoid costly booking errors and track intraday P&L.</li>
                                 <li>Trained a junior member of staff to become an execution trader.</li>
                                 <li>Trained a junior member of staff to become an execution trader.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <Divider horizontal className='cv-divider'>
+                        <Header as='h2'>Volunteer Work</Header>
+                    </Divider>
+                    <div className='experience-container'>
+                        <Segment basic>
+                            <Header as='h3' floated='left'>Codebar
+                                <Header.Subheader>Coach</Header.Subheader>
+                            </Header>
+                            <Header as='h3' floated='right'>Oct 2018 - Present
+                                <Header.Subheader>London, United Kingdom</Header.Subheader>
+                            </Header>
+                        </Segment>
+                        <br />
+                        <div>
+                            <ul>
+                                <p>
+                                    I volunteer at Codebar, helping people learn how to code who are just starting out in Ruby, JavaScript or React.<br />
+                                    It's a great experience with a friendly crowd, so if you're an experienced developer or looking to learn,
+                                    I'd highly recommend coming along one evening.
+                                </p>
                             </ul>
                         </div>
                     </div>
