@@ -70,7 +70,6 @@ const CV = () => {
                                 <li>Analysed and profiled product risk and flow, reporting to senior staff with detailed analysis and summaries of findings.</li>
                                 <li>Created a wide array of models in Excel that were used to monitor asset exposure in real time across multiple asset classes, reconcile internal and external hedge accounts to avoid costly booking errors and track intraday P&L.</li>
                                 <li>Trained a junior member of staff to become an execution trader.</li>
-                                <li>Trained a junior member of staff to become an execution trader.</li>
                             </ul>
                         </div>
                     </div>
@@ -81,10 +80,11 @@ const CV = () => {
                         <Header as='h2'>Codebar
                             <Header.Subheader>Coach</Header.Subheader>
                         </Header>
-                        <div className='descriptive-text'>
-                            <p>I volunteer at Codebar, helping people learn how to code who are just starting out in Ruby, JavaScript or React.
-                                It's a great experience with a friendly crowd, so if you're an experienced developer or looking to learn,
-                                I'd highly recommend coming along one evening.</p>
+                        <div>
+                            <ul>
+                                <p>I volunteer at Codebar, helping people learn how to code who are just starting out in Ruby, JavaScript or React.</p>
+                                <p>It's a great experience with a friendly crowd, so if you're an experienced developer or looking to learn, I'd highly recommend coming along one evening.</p>
+                            </ul>
                         </div>
                     </div>
                 </Container>
@@ -167,7 +167,6 @@ const CV = () => {
                                 <li>Experienced with cross-hedging over-the-counter products and contracts-for-differences with cash equities and futures, trading commodity and interest rate spreads and processing give-ups.</li>
                                 <li>Analysed and profiled product risk and flow, reporting to senior staff with detailed analysis and summaries of findings.</li>
                                 <li>Created a wide array of models in Excel that were used to monitor asset exposure in real time across multiple asset classes, reconcile internal and external hedge accounts to avoid costly booking errors and track intraday P&L.</li>
-                                <li>Trained a junior member of staff to become an execution trader.</li>
                                 <li>Trained a junior member of staff to become an execution trader.</li>
                             </ul>
                         </div>
