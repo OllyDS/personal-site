@@ -33,6 +33,12 @@ class Navbar extends React.Component {
                                 onClick={handleItemClick}
                             />
                             <Menu.Item
+                                as={NavLink} exact to='/playground'
+                                name='CV Playground'
+                                active={activeItem === 'CV Playground'}
+                                onClick={handleItemClick}
+                            />
+                            <Menu.Item
                                 as={NavLink} exact to='/contact'
                                 name='CONTACT'
                                 active={activeItem === 'CONTACT'}

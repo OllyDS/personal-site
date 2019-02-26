@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx'
 import Home from './components/Home.jsx'
 import CV from './components/CV'
 import Contact from './components/Contact.jsx'
+import Playground from './components/playground'
 
 import './App.css'
 
@@ -16,6 +17,7 @@ class App extends React.Component {
       <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/cv' component={CV} />
+          <Route exact path='/playground' component={Playground} />
           <Route exact path='/contact' component={Contact} /> 
       </Switch>
       </div>

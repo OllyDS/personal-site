@@ -103,3 +103,14 @@
 .experience-container {
   padding-bottom: 2em;
 }
+
+.donut-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+svg {
+  display: inline-flex
+}
