@@ -1,35 +1,47 @@
 import * as d3 from 'd3'
 // import jsonData from '../playgroundComponents/donutData'
 
-const data = [
-    {
-        name: "JavaScript",
-        time: 42,
-        color: "yellow"
-    },
-    {
-        name: "Ruby",
-        time: 28,
-        color: "red"
-    },
-    {
-        name: "SQL",
-        time: 10,
-        color: "orange"
-    },
-    {
-        name: "NoSQL",
-        time: 5,
-        color: "green"
-    },
-    {
-        name: "HTML/CSS",
-        time: 15,
-        color: "blue"
-    }
-]
+let fetchedData = []
 
-const drawDonut = () => {
+const githubDataP1 = () => fetch("https://api.github.com/user/repos?per_page=100", {
+  headers: {
+    Authorization: "token 74769b86ebcce2cb704b4be6666c88dba993656d"
+  }
+}).then(resp => resp.json())
+
+const githubDataP2 = () => fetch("https://api.github.com/user/repos?per_page=100&page=2", {
+  headers: {
+    Authorization: "token 74769b86ebcce2cb704b4be6666c88dba993656d"
+  }
+}).then(resp => resp.json())
+
+const githubDataP3 = () => fetch("https://api.github.com/user/repos?per_page=100&page=3", {
+  headers: {
+    Authorization: "token 74769b86ebcce2cb704b4be6666c88dba993656d"
+  }
+}).then(resp => resp.json())
+
+const dataFetch = () => {
+    githubDataP1().then(data => data.map(repo => fetchedData.push(repo.language)))
+    githubDataP2().then(data => data.map(repo => fetchedData.push(repo.language)))
+    githubDataP3().then(data => data.map(repo => fetchedData.push(repo.language)))
+}
+
+dataFetch()
+console.log("fetchedData:", fetchedData)
+
+const drawDonut = async () => {
+
+    // The below works when done in the console (copy&paste all code) but doesn't here, indicating it's firing too quickly!
+    const data = await [
+        { name: "JavaScript", count: 90 },
+        { name: "TypeScript", count: fetchedData.filter(lang => lang === "TypeScript").length },
+        { name: "Ruby", count: fetchedData.filter(lang => lang === "Ruby").length },
+        { name: "HTML", count: fetchedData.filter(lang => lang === "HTML").length },
+        { name: "CSS", count: fetchedData.filter(lang => lang === "CSS").length }
+    ]
+
+    await console.log(data)
 
     const dimensions = { height: 400, width: 400, radius: 200 }
     const center = { x: (dimensions.width / 2 + 5), y: (dimensions.height / 2 + 5) }
@@ -44,34 +56,43 @@ const drawDonut = () => {
     
     const pie = d3.pie()
         .sort(null)
-        .value(data => data.time)
+        .value(data => data.count)
     
     // Now that we have the start/end angles from .pie() we can draw them out:
     const arcPath = d3.arc()
         .outerRadius(dimensions.radius)
         .innerRadius(dimensions.radius / 2)
 
-    /* THE BELOW IS A DYNAMIC WAY OF COLOURING THE DONUT, BUT I PREFERRED SPECIFIC COLOURS FOR THIS.
+    // THE BELOW IS A DYNAMIC WAY OF COLOURING THE DONUT, BUT I PREFERRED SPECIFIC COLOURS FOR THIS.
     
     // calls on d3 to supply an array of colors using 'ordinal scale'.
-    // const color = d3.scaleOrdinal(d3['schemeSet3'])
+    const color = d3.scaleOrdinal(d3['schemeSet3'])
     
     // grab the static data:    
-    // color.domain(data.map(el => el.color))
+    color.domain(data.map(el => el.color))
 
-    END */
 
     // assign the graph path elements to paths variable.
     const paths = graph.selectAll('path')
         .data(pie(data))
+        
+    const arcTweenEnter = d => {
+        let i = d3.interpolate(d.endAngle, d.startAngle)
+        return function(t) {
+            d.startAngle = i(t)
+            return arcPath(d)
+        }
+    }
 
     paths.enter()
         .append('path')
         .attr('class', 'arc')
-        .attr('d', arcPath)
+        // .attr('d', arcPath)
         .attr('stroke', '#000')
         .attr('stroke-width', 2)
-        .attr('fill', el => el.data.color)
+        .attr('fill', color)
+        .transition().duration(1000)
+            .attrTween("d", arcTweenEnter)
  
 }
 export default drawDonut

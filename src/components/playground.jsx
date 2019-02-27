@@ -9,7 +9,7 @@ import DonutChart from './playgroundComponents/DonutChart'
 const Playground = () => {
     return(
         <Container>
-            <Divider horizontal className='cv-divider'>
+            {/* <Divider horizontal className='cv-divider'>
                 <Header as='h2'>About Me</Header>
             </Divider>
             <div className='descriptive-text'>
@@ -17,7 +17,7 @@ const Playground = () => {
                 During this time, I got to work closely with different development teams and software engineers, which sparked my love affair with coding.</p>
                 <p>After learning to write database queries in SQL and trying to teach myself C++ in the evenings, I decided to take the plunge and fully commit to becoming a developer, enrolling in the Flatiron bootcamp.
                 I have a real passion for creating things and helping to solve challenges, and enjoy working in collaborative environments where teamwork is promoted.</p>
-            </div>
+            </div> */}
             <Divider horizontal className='cv-divider'>
                 <Header as='h2'>Technical Experience</Header>
             </Divider>
