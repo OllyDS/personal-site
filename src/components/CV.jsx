@@ -1,8 +1,8 @@
-import React from 'react'
-import { Container, Divider, Header, Segment, Responsive } from 'semantic-ui-react'
+import * as React from "react";
+import { Container, Divider, Header, Segment, Responsive } from "semantic-ui-react";
 
-const Mobile = props => <Responsive {...props} maxWidth={767} />
-const Desktop = props => <Responsive {...props} minWidth={768} />
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Desktop = props => <Responsive {...props} minWidth={768} />;
 
 const CV = () => {
     return(
