@@ -2,7 +2,7 @@ import * as React from "react";
 import { Dimmer, Image, Header, Button } from "semantic-ui-react";
 
 const ProjectOne = () => {
-  const [active, setActive] = React.useState(null);
+  const [active, setActive] = React.useState(false);
 
   const content = (
     <div>

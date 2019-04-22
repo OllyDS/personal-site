@@ -3,8 +3,8 @@ import { Menu, Segment } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = React.useState(null);
-
+  const [activeItem, setActiveItem] = React.useState("");
+  
   return(
     <div>
       <Segment inverted>
@@ -14,7 +14,7 @@ const Navbar = () => {
               as={NavLink} exact to="/"
               name="OLIVER DE SOUSA"
               active={activeItem === "OLIVER DE SOUSA"}
-              onClick={(name) => setActiveItem(name)}
+              onClick={() => setActiveItem("OLIVER DE SOUSA")}
             />
           </Menu.Menu>
           <Menu.Menu position="right">
@@ -22,13 +22,13 @@ const Navbar = () => {
               as={NavLink} exact to="/cv"
               name="CV"
               active={activeItem === "CV"}
-              onClick={(name) => setActiveItem(name)}
+              onClick={() => setActiveItem("CV")}
             />
             <Menu.Item
               as={NavLink} exact to="/contact"
               name="CONTACT"
               active={activeItem === "CONTACT"}
-              onClick={(name) => setActiveItem(name)}
+              onClick={() => setActiveItem("CONTACT")}
             />
           </Menu.Menu>
         </Menu>
@@ -36,5 +36,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;
