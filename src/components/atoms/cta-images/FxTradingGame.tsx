@@ -1,15 +1,15 @@
 import * as React from "react";
+import { Link } from "react-router-dom"
 import { Dimmer, Image, Header, Button } from "semantic-ui-react";
 
-const ProjectTwo = () => {
+const FxTradingGame = () => {
   const [active, setActive] = React.useState(false);
     
   const content = (
     <div>
-      <Header as='h2' inverted>FX Trading Game</Header>
-      <p>Make as much money as you can buying and selling currency pairs in 60seconds to get the best score possible.</p>
-      <Button as='a' href='https://github.com/anavarreteuk/Stock-Market-Game-FrontEnd' target='_blank'>Github</Button>
-      <Button as='a' href='https://www.youtube.com/watch?v=jkf82_QIURA' target='_blank'>Video Demo</Button>
+      <Link to="/">
+        <Header as='h2' inverted>FX Trading Game</Header>
+      </Link>
     </div>
   );
 
@@ -28,4 +28,4 @@ const ProjectTwo = () => {
   );
 };
 
-export default ProjectTwo;
+export default FxTradingGame;
