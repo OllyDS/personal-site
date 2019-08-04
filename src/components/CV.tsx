@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { Container, Divider, Header, Segment } from "semantic-ui-react";
 
 const CV = () => {
@@ -9,7 +10,7 @@ const CV = () => {
           <Header as='h2'>About Me</Header>
         </Divider>
         <div className='descriptive-text'>
-          <p>I'm a junior software engineer with a background in finance, where I previously worked as a currency trader and consultant before moving into fintech.</p>
+          <p>I'm a junior software engineer with a background in finance, where I previously worked as a currency trader and consultant before making a career transition.</p>
           <p>After learning to write database queries in SQL and trying to teach myself C++ in the evenings, I decided to take the plunge and fully commit to becoming a developer.
             I have a real passion for creating things and helping to solve challenges, and enjoy working in collaborative environments where teamwork is promoted.</p>
         </div>
@@ -17,22 +18,16 @@ const CV = () => {
           <Header as='h2'>Technical Experience</Header>
         </Divider>
         <div className='experience-container'>
-          <Segment basic>
-            <Header as='h3' floated='left'>Flatiron School
-              <Header.Subheader>Software Development Immersive</Header.Subheader>
-            </Header>
-            <Header as='h3' floated='right'>Sep 2018 - Jan 2019
-              <Header.Subheader>London, United Kingdom</Header.Subheader>
-            </Header>
-          </Segment>
-          <div><br/>
+          <div>
+            
             <ul>
               <p>
-                <strong>Core Languages: </strong>Ruby, JavaScript, SQL.
+                <strong>Languages: </strong>JavaScript, TypeScript, Python, Ruby, SQL, HTML5, CSS.
                 <br/>
-                <strong>Core Libraries: </strong>Node.js, React.js, React-Router, Redux, Ruby on Rails, Sinatra, HTML5, CSS, SQLite, PostgreSQL.
+                <strong>Frameworks/Libraries/Environments: </strong>React, Redux, Quart (Flask), Node, Express, Ruby on Rails, PostgreSQL.
               </p>
               <p>
+                Experience working as a Full-Stack engineer for a fintech company specialising in financial planning and advice.
                 Experienced using MVC architecture and RESTful API design, creating accessible and progressive web applications,
                 deploying both front-end and back-end projects to Heroku, and using Git for version control.
                 Built and hosted API's using a Ruby/PostgreSQL back-end stack, implemented user authentication via 0auth and JWT, worked extensively with Google
@@ -98,6 +93,29 @@ const CV = () => {
               <li>Analysed and profiled product risk and flow, reporting to senior staff with detailed analysis and summaries of findings.</li>
               <li>Created a wide array of models in Excel that were used to monitor asset exposure in real time across multiple asset classes, reconcile internal and external hedge accounts to avoid costly booking errors and track intraday P&L.</li>
               <li>Trained a junior member of staff to become an execution trader.</li>
+            </ul>
+          </div>
+        </div>
+        <Divider horizontal className='cv-divider'>
+          <Header as='h2'>Technical Education</Header>
+        </Divider>
+        <div className='experience-container'>
+        <Segment basic>
+            <Header as='h3' floated='left'>Flatiron School
+              <Header.Subheader>Software Development Immersive</Header.Subheader>
+            </Header>
+            <Header as='h3' floated='right'>Sep 2018 - Jan 2019
+              <Header.Subheader>London, United Kingdom</Header.Subheader>
+            </Header>
+          </Segment>
+          <div><br/>
+            <ul>
+              <p>
+                I attended the Flatiron School 15 week intensive Software Engineering bootcamp in London. It was an intense but highly rewarding experience
+                which provided me with the opportunities and tools to learn core programming skills in Ruby and Javascript langauges, alongside the popular
+                Rails and React frameworks. As a final assignment, students were given the task of creating their own application, at which point I chose to
+                create the "mimapp" app that you can learn more about <Link to="/projects/personal-projects/">here.</Link>
+              </p>
             </ul>
           </div>
         </div>
