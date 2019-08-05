@@ -26,7 +26,8 @@ const Home = () => (
   <>
     <img className="homepage-image" src="/images/london-wide.jpg" alt="picture of the City of London"/>
     <STextWrapper>
-      <p className="heading-text">Hello, I'm Oliver, a software engineer living in London. Please feel free to explore my projects and get in touch.</p>
+      <SHeader>Hello, I'm Oliver, a software engineer living in London.</SHeader>
+      <p>Please feel free to explore my projects below, and get in touch if you have any queries.</p>
     </STextWrapper>
     <Divider horizontal>Professional Work</Divider>
     <Container>
@@ -40,18 +41,18 @@ const Home = () => (
     <Divider horizontal>Skills</Divider>
     <Container className="lang-icons-container">
       <Image.Group size="tiny">
-        <Image src="/images/react-icon.png" alt="react.js" className="icons"/>
-        <Image src="/images/js-icon.png" alt="javascript" className="icons"/>
-        <Image src="/images/typescript-icon.png" alt="typescript" className="icons"/>
-        <Image src="/images/html-5-icon.png" alt="html 5" className="icons"/>
-        <Image src="/images/css-icon.png" alt="css" className="icons"/>
-        <Image src="/images/python-icon.png" alt="python" className="icons"/>
-        <Image src="/images/nodejs-icon.png" alt="node.js" className="icons"/>
-        <Image src="/images/ruby-icon.png" alt="ruby" className="icons"/>
-        <Image src="/images/ror-icon.png" alt="ruby on rails" className="icons"/>
-        <Image src="/images/postgresql-icon.png" alt="postgresql" className="icons"/>
-        <Image src="/images/heroku-icon.png" alt="heroku" className="icons"/>
-        <Image src="/images/github-icon.png" alt="github" className="icons"/>
+        <Image src="/images/icons/react.png" alt="react.js" className="icons"/>
+        <Image src="/images/icons/js.png" alt="javascript" className="icons"/>
+        <Image src="/images/icons/ts.png" alt="typescript" className="icons"/>
+        <Image src="/images/icons/html-5.png" alt="html 5" className="icons"/>
+        <Image src="/images/icons/css.png" alt="css" className="icons"/>
+        <Image src="/images/icons/python.png" alt="python" className="icons"/>
+        <Image src="/images/icons/node.png" alt="node.js" className="icons"/>
+        <Image src="/images/icons/ruby.png" alt="ruby" className="icons"/>
+        <Image src="/images/icons/ror.png" alt="ruby on rails" className="icons"/>
+        <Image src="/images/icons/postgresql.png" alt="postgresql" className="icons"/>
+        <Image src="/images/icons/heroku.png" alt="heroku" className="icons"/>
+        <Image src="/images/icons/github.png" alt="github" className="icons"/>
       </Image.Group>
     </Container>
   </>
