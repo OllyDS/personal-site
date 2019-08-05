@@ -24,15 +24,13 @@ const CV = () => {
               <p>
                 <strong>Languages: </strong>JavaScript, TypeScript, Python, Ruby, SQL, HTML5, CSS.
                 <br/>
-                <strong>Frameworks/Libraries/Environments: </strong>React, Redux, Quart (Flask), Node, Express, Ruby on Rails, PostgreSQL.
+                <strong>Frameworks/Environments: </strong>React, Redux, Quart (Flask), Node, Express, Ruby on Rails, PostgreSQL.
               </p>
               <p>
-                Experience working as a Full-Stack engineer for a fintech company specialising in financial planning and advice.
-                Experienced using MVC architecture and RESTful API design, creating accessible and progressive web applications,
-                deploying both front-end and back-end projects to Heroku, and using Git for version control.
-                Built and hosted API's using a Ruby/PostgreSQL back-end stack, implemented user authentication via 0auth and JWT, worked extensively with Google
-                Maps documentation and API's to create a React app based on the Google Maps technology as well as utilising libraries such as Semantic and Bootstrap for UI design.
-                A beginner's knowledge of Python and C++.
+                Utilising functional programming methodologies to create clean, self-documenting code that is easy to understand and maintain.
+                Experience creating RESTful APIs for user authentication, including 'MFA' via Google Authenticator. Strong command of the
+                React Life Cycle and how to utilise hooks to interact with both local and global (redux) state. Solid understanding of key css
+                features such as flex and grid as well as styled components.
               </p>
             </ul>
           </div>
@@ -51,9 +49,11 @@ const CV = () => {
           </Segment>
           <div><br/>
             <ul>
-              <li>Working as a full-stack software engineer, using the following languages and frameworks: React, Redux, TypeScript, Python and Flask.</li>
-              <li>Client portal - helped develop a progressive web application for clients to log in and track their investments and assets.</li>
-              <li>Internal Procedures - automated processes in the business that reduced administrative duties in other areas of the business, allowing the team to focus on more important aspects of their roles.</li>
+              <li>Full-stack engineer working with languages/frameworks such as Typescript, React, Redux, Python and Flask.</li>
+              <li>Strong frontend React skills, including utilising the latest version tools such as React and Redux Hooks.</li>
+              <li>Agile team working in sprints to create innovative software that meets our commercial needs.</li>
+              <li>Built a progressive web app (PWA) for clients to access a breakdown of their personal assets (pensions etc).</li>
+              <li>Built a new website for the marketing team, utilising a range of third-party tools such as Google Tag Manager to help analyse user engagement. Created tools to promote our product and help generate new business leads.</li>
             </ul>
           </div>
         </div>
