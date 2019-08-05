@@ -1,12 +1,18 @@
 @media (max-width: 767px ) {
-  body{font-size: 12px;}
+  body {
+    font-family: 'Roboto' sans-serif;
+    font-size: 16px;
+  }
   .homepage-image {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  body{font-size: 16px;}
+  body {
+    font-family: 'Roboto' sans-serif;
+    font-size: 18px;
+  }
   .homepage-image {
     max-width: 100vw;
   }
@@ -19,37 +25,9 @@
 
 
 /*-*-*-HOME PAGE-*-*-*/
-
-.heading-container {
-  display: flex;
-  font-family: Roboto;
-  justify-content: center;
-  margin: 15px 5px 0px 5px;
-}
-
-@media screen and (max-width: 767px) {
-  .heading-text {
-    font-size: 16px;
-    padding: 20px;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .heading-text {
-    font-size: 20px;
-    padding: 30px;
-    text-align: center;
-  }
-}
-
 .ui.horizontal.divider {
   line-height: 3;
-}
-
-.project-container {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .ui.tiny.images {

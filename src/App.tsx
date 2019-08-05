@@ -5,18 +5,22 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import CV from "./components/CV";
 import Contact from "./components/Contact";
+import OctopusWealthProject from "./components/molecules/OctopusWealthProject";
+import PersonalProjects from "./components/molecules/PersonalProjects";
 
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="app-container">
-    <Navbar />
-    <Switch>
-      <Route exact path="/" component={Home}/>
-      <Route exact path="/cv" component={CV} />
-      <Route exact path="/contact" component={Contact} /> 
-    </Switch>
+    <div className="app-container" id="top">
+      <Navbar />
+      <Switch>
+        <Route exact={true} path="/" component={Home}/>
+        <Route exact={true} path="/cv/" component={CV} />
+        <Route exact={true} path="/contact/" component={Contact} />
+        <Route exact={true} path="/projects/octopus-wealth/" component={OctopusWealthProject} />
+        <Route exact={true} path="/projects/personal-projects/" component={PersonalProjects} />
+      </Switch>
     </div>
   );
 };
