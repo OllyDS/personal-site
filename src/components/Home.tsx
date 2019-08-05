@@ -7,10 +7,15 @@ import FxTradingGame from "./atoms/cta-images/FxTradingGame";
 import OctopusWealth from "./atoms/cta-images/OctopusWealth"
 
 const STextWrapper = styled.div`
-  display: flex;
   font-family: 'Roboto' sans-serif;
-  justify-content: center;
-  margin: 20px 10px;
+  margin: 60px 20px;
+  text-align: center;
+`;
+
+const SHeader = styled.h1`
+  font-family: 'Roboto' sans-serif;
+  font-size: 1.6em;
+  margin: 8px 0;
 `;
 
 const SImageWrapper = styled.div`
