@@ -22,9 +22,9 @@ const CV = () => {
             
             <ul>
               <p>
-                <strong>Languages: </strong>JavaScript, TypeScript, Python, Ruby, SQL, HTML5, CSS.
+                <strong>Languages: </strong>JavaScript, TypeScript, Python, Ruby, SQL, GraphQL, HTML5, CSS.
                 <br/>
-                <strong>Frameworks/Environments: </strong>React, Redux, Quart (Flask), Node, Express, Ruby on Rails, PostgreSQL.
+                <strong>Frameworks/Environments: </strong>React, Redux, Quart (Flask), Node, Express, Ruby on Rails, Apollo, PostgreSQL.
               </p>
               <p>
                 Utilising functional programming methodologies to create clean, self-documenting code that is easy to understand and maintain.

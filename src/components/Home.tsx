@@ -31,26 +31,34 @@ const Home = () => (
     </STextWrapper>
     <Divider horizontal>Professional Work</Divider>
     <Container>
-      <SImageWrapper><OctopusWealth /></SImageWrapper>
+      <SImageWrapper>
+        <OctopusWealth />
+      </SImageWrapper>
     </Container>
     <Divider horizontal>Personal Projects</Divider>
     <Container>
-      <SImageWrapper><Mimapp /></SImageWrapper>
+      <SImageWrapper>
+        <Mimapp />
+      </SImageWrapper>
       <SImageWrapper><FxTradingGame /></SImageWrapper>
     </Container>
     <Divider horizontal>Skills</Divider>
     <Container className="lang-icons-container">
       <Image.Group size="tiny">
         <Image src="/images/icons/react.png" alt="react.js" className="icons"/>
+        <Image src="/images/icons/redux.png" alt="redux" className="icons"/>
         <Image src="/images/icons/js.png" alt="javascript" className="icons"/>
         <Image src="/images/icons/ts.png" alt="typescript" className="icons"/>
+        <Image src="/images/icons/node.png" alt="node.js" className="icons"/>
+        <Image src="/images/icons/express.png" alt="express" className="icons"/>
         <Image src="/images/icons/html-5.png" alt="html 5" className="icons"/>
         <Image src="/images/icons/css.png" alt="css" className="icons"/>
         <Image src="/images/icons/python.png" alt="python" className="icons"/>
-        <Image src="/images/icons/node.png" alt="node.js" className="icons"/>
         <Image src="/images/icons/ruby.png" alt="ruby" className="icons"/>
         <Image src="/images/icons/ror.png" alt="ruby on rails" className="icons"/>
         <Image src="/images/icons/postgresql.png" alt="postgresql" className="icons"/>
+        <Image src="/images/icons/graphql.png" alt="graphql" className="icons"/>
+        <Image src="/images/icons/apollo.png" alt="apollo" className="icons"/>
         <Image src="/images/icons/heroku.png" alt="heroku" className="icons"/>
         <Image src="/images/icons/github.png" alt="github" className="icons"/>
       </Image.Group>
