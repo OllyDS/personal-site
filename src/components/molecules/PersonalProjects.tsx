@@ -57,6 +57,7 @@ const SText = styled.p`
 const SVideo = styled.iframe`
   display: flex;
   height: 360px;
+  margin: auto;
   width: 645px;
 
   @media (max-width: 639px)
