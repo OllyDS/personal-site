@@ -13,6 +13,7 @@ const SImageWrapper = styled.div`
 
 const SImage = styled.img`
   box-shadow: 1px 2px 8px 0 rgba(34, 34, 34, 0.3);
+  max-width: 90vw;
 `;
 
 const SLink = styled(Link)`
