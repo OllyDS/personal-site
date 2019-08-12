@@ -18,7 +18,7 @@ const SContainer = styled.div`
   height: 450px;
   margin: auto;
   position: relative;
-  width: 900px;
+  max-width: 900px;
 
   @media (max-width: 639px) {
     display: none
@@ -59,7 +59,7 @@ const SText = styled.h1`
 
 const SMobileImage = styled.img`
   height: 100px
-  width: 100px;
+  max-width: 100px;
 
   @media(min-width: 640px) {
     display: none;
