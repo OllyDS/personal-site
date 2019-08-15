@@ -2,9 +2,9 @@ import * as React from "react";
 import styled from "styled-components";
 import { Container, Divider, Image } from "semantic-ui-react";
 
-import Mimapp from "./atoms/cta-images/Mimapp";
-import FxTradingGame from "./atoms/cta-images/FxTradingGame";
-import OctopusWealth from "./atoms/cta-images/OctopusWealth"
+import Mimapp from "./molecules/cta-images/Mimapp";
+import FxTradingGame from "./molecules/cta-images/FxTradingGame";
+import OctopusWealth from "./molecules/cta-images/OctopusWealth"
 
 const STextWrapper = styled.div`
   font-family: 'Roboto' sans-serif;

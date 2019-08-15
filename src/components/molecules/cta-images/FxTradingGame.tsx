@@ -2,7 +2,7 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 
-import { Cell, Container, Grid } from "../Grid";
+import { Cell, Container, Grid } from "../../atoms/Grid";
 
 const SImageContainer = styled.div`
   display: none;
@@ -10,7 +10,7 @@ const SImageContainer = styled.div`
 `;
 
 const SContainer = styled.div`
-  background-image: url(/images/mimapp.png);
+  background-image: url(/images/FX-trading-game-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,24 +77,24 @@ const SMobileText = styled.h1`
   }
 `;
 
-const Mimapp = () => (
-  <Link to="/projects/personal-projects/#mimapp">
+const FxTradingGame = () => (
+  <Link to="/projects/personal-projects/#fx-game">
     <SContainer>
       <SImageContainer>
-        <SText className="text">mimapp</SText>
+        <SText className="text">Fx Trading Game</SText>
       </SImageContainer>
     </SContainer>
     <Container>
       <Grid>
         <SCell width={5}>
-          <SMobileImage src="/images/icons/map.png" />
+          <SMobileImage src="/images/icons/chart.png" />
         </SCell>
         <SCell width={7}>
-          <SMobileText>mimapp</SMobileText>
+          <SMobileText>Fx Trading Game</SMobileText>
         </SCell>
       </Grid>
     </Container>
   </Link>
 );
 
-export default Mimapp;
+export default FxTradingGame;
