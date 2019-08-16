@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 
 import { Cell, Container, Grid } from "../../atoms/Grid";

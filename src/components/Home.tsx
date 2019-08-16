@@ -24,7 +24,7 @@ const SImageWrapper = styled.div`
 
 const Home = () => (
   <>
-    <img className="homepage-image" src="/images/london-wide.jpg" alt="picture of the City of London"/>
+    <img className="homepage-image" src="/images/london-wide.jpg" alt="The City of London"/>
     <STextWrapper>
       <SHeader>Hello, I'm Oliver, a software engineer living in London.</SHeader>
       <p>Please feel free to explore my projects below, and get in touch if you have any queries.</p>
