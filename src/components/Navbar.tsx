@@ -63,6 +63,7 @@ const styledLink = css`
   cursor: pointer;
   display: flex;
   font-family: 'Roboto' sans-serif;
+  font-size: 1.1rem;
   min-width: 20px
 
   &:hover {
