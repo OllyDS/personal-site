@@ -5,33 +5,43 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Cell, Container, Grid } from "../../atoms/Grid";
 
 const SImageContainer = styled.div`
-  display: none;
   margin: auto;
+`;
+
+const SText = styled.h1`
+  display: none;
 `;
 
 const SContainer = styled.div`
   background-image: url(/images/mimapp.png);
+  background-origin: content-box, padding-box;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(34, 34, 34, 0.3);
   display: flex;
-  height: 450px;
+  height: 400px;
   margin: auto;
   position: relative;
   max-width: 900px;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 639px) {
     display: none
   }
 
-  &:hover ${SImageContainer} {
-    background-color: #000000;
-    display: flex;
-    height: 100%;
-    margin: auto;
-    opacity: 0.8;
-    position: absolute;
-    width: 100%;
+  &:hover {
+    transform: scale(1.05);
+    ${SText} {
+      color: #FFFFFF;
+      display: flex;
+      font-size: 6rem;
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+      text-shadow: 0 0 20px black;
+    }
 
     @media (max-width: 639px) {
       display: none
@@ -39,22 +49,8 @@ const SContainer = styled.div`
   }
 `;
 
-const textStyling = css`
-  align-items: center;
-  color: #FFFFFF;
-  display: flex;
-  font-size: 50px;
-  margin: auto;
-  position: relative;
-  text-align: center;
-`;
-
 const SCell = styled(Cell)`
   display: flex;
-`;
-
-const SText = styled.h1`
-  ${textStyling}
 `;
 
 const SMobileImage = styled.img`
@@ -67,21 +63,27 @@ const SMobileImage = styled.img`
 `;
 
 const SMobileText = styled.h1`
-  ${textStyling}
+  align-items: center;
   color: #1B1C1D;
   display: flex;
   font-size: 32px;
-  justify-content: center
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
   @media (min-width: 640px) {
     display: none;
   }
 `;
 
+
+
 const Mimapp = () => (
   <Link to="/personal-projects/#mimapp">
     <SContainer>
       <SImageContainer>
-        <SText className="text">mimapp</SText>
+        <SText>mimapp</SText>
       </SImageContainer>
     </SContainer>
     <Container>

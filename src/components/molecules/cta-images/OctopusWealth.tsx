@@ -11,27 +11,27 @@ const SImageContainer = styled.div`
 
 const SContainer = styled.div`
   background-image: url(/images/OctopusWealth.png);
+  background-origin: content-box, padding-box;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(34, 34, 34, 0.3);
   display: flex;
   height: 300px;
   margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
   position: relative;
   max-width: 900px;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 639px) {
     display: none
   }
 
-  &:hover ${SImageContainer} {
-    background-color: #000000;
-    display: flex;
-    height: 100%;
-    margin: auto;
-    opacity: 0.8;
-    position: absolute;
-    width: 100%;
+  &:hover {
+    transform: scale(1.05);
 
     @media (max-width: 639px) {
       display: none
