@@ -78,7 +78,7 @@ const SMobileText = styled.h1`
 `;
 
 const OctopusWealth = () => (
-  <Link to="/projects/octopus-wealth/#top">
+  <Link to="/octopus-wealth/#top">
     <SContainer>
       <SImageContainer>
         <SText className="text">Octopus Wealth</SText>

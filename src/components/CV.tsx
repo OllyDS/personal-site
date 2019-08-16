@@ -114,7 +114,7 @@ const CV = () => {
                 I attended the Flatiron School 15 week intensive Software Engineering bootcamp in London. It was an intense but highly rewarding experience
                 which provided me with the opportunities and tools to learn core programming skills in Ruby and Javascript langauges, alongside the popular
                 Rails and React frameworks. As a final assignment, students were given the task of creating their own application, at which point I chose to
-                create the "mimapp" app that you can learn more about <Link to="/projects/personal-projects/#mimapp">here.</Link>
+                create the "mimapp" app that you can learn more about <Link to="/personal-projects/#mimapp">here.</Link>
               </p>
             </ul>
           </div>

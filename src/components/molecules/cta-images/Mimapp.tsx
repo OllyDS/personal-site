@@ -78,7 +78,7 @@ const SMobileText = styled.h1`
 `;
 
 const Mimapp = () => (
-  <Link to="/projects/personal-projects/#mimapp">
+  <Link to="/personal-projects/#mimapp">
     <SContainer>
       <SImageContainer>
         <SText className="text">mimapp</SText>

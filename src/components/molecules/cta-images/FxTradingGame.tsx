@@ -78,7 +78,7 @@ const SMobileText = styled.h1`
 `;
 
 const FxTradingGame = () => (
-  <Link to="/projects/personal-projects/#fx-game">
+  <Link to="/personal-projects/#fx-game">
     <SContainer>
       <SImageContainer>
         <SText className="text">Fx Trading Game</SText>

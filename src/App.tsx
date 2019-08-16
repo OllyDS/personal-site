@@ -19,8 +19,8 @@ const App = () => {
         <Route exact={true} path="/" component={Home}/>
         <Route exact={true} path="/cv/" component={CV} />
         <Route exact={true} path="/contact/" component={Contact} />
-        <Route exact={true} path="/projects/octopus-wealth/" component={OctopusWealthProject} />
-        <Route exact={true} path="/projects/personal-projects/" component={PersonalProjects} />
+        <Route exact={true} path="/octopus-wealth/" component={OctopusWealthProject} />
+        <Route exact={true} path="/personal-projects/" component={PersonalProjects} />
         <Route component={FourOFourPage} />
       </Switch>
     </div>
