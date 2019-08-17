@@ -7,52 +7,34 @@ interface IHamburgerProps {
   onClick: () => void;
 }
 
-const SHamburger = styled.button`
+const SHamburger = styled.div`
   align-items: center;
   display: flex;
-  margin-left: 14px;
+  outline:none;
+  padding-left: 25px;
+  padding-right: 25px;
   user-select: none;
 `;
 
-const SHamburgerInner = styled.div`
+const SHamburgerInner = styled.button`
   align-items: stretch;
   background: none;
   border: 0;
-  color: #FFFFFF;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 19px;
+  height: 20px;
   justify-content: space-between;
+  outline:none;
   padding: 0;
-  width: 22px;
+  width: 24px;
 `;
 
 const SLine = styled.div<IHamburgerProps>`
-  background-color: currentColor;
+  background-color: #FFFFFF;
   border-radius: 2px;
   height: 2px;
-  ${props =>
-    props.active &&
-    css`
-      background-color: grey;
-
-      &:first-child {
-        transform: rotate(45deg);
-        transform-origin: 0 5px;
-      }
-
-      &:nth-child(2) {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-
-      &:last-child {
-        transform: rotate(-45deg);
-        transform-origin: 1px -2px;
-      }
-    `};
-  transition: all 0.5s ease;
+  outline:none;
 `;
 
 interface IProps {

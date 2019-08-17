@@ -143,6 +143,29 @@ const SSideBarMenu = styled.div<IMenuProps>`
   };
 `;
 
+const SBackdrop = styled.div<IMenuProps>`
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  z-index: 100;
+
+  /* stylelint-disable */
+  ${props =>
+    props.isOpen &&
+    css`
+      opacity: 0.7;
+      visibility: visible;
+    `};
+  /* stylelint-enable */
+`;
+
+
 
 const Navbar = () => {
   const [topOfPage, setTopOfPage] = React.useState(true);
@@ -208,6 +231,7 @@ const Navbar = () => {
           </SHamburgerLinks>
         </SSmallLink>
       </SSideBarMenu>
+      <SBackdrop isOpen={isOpen} onClick={() => setIsOpen(false)}/>
     </>
   );
 };
