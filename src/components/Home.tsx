@@ -22,6 +22,10 @@ const SImageWrapper = styled.div`
   margin-bottom: 2em;
 `;
 
+const SContainer = styled(Container)`
+  margin-bottom: 4em;
+`;
+
 const Home = () => (
   <>
     <img className="homepage-image" src="/images/london-wide.jpg" alt="The City of London"/>
@@ -43,7 +47,7 @@ const Home = () => (
       <SImageWrapper><FxTradingGame /></SImageWrapper>
     </Container>
     <Divider horizontal>Skills</Divider>
-    <Container className="lang-icons-container">
+    <SContainer className="lang-icons-container">
       <Image.Group size="tiny">
         <Image src="/images/icons/react.png" alt="react.js" className="icons"/>
         <Image src="/images/icons/redux.png" alt="redux" className="icons"/>
@@ -62,7 +66,7 @@ const Home = () => (
         <Image src="/images/icons/heroku.png" alt="heroku" className="icons"/>
         <Image src="/images/icons/github.png" alt="github" className="icons"/>
       </Image.Group>
-    </Container>
+    </SContainer>
   </>
 );
 
