@@ -10,9 +10,16 @@ const CV = () => {
           <Header as='h2'>About Me</Header>
         </Divider>
         <div className='descriptive-text'>
-          <p>I'm a junior software engineer with a background in finance, where I previously worked as a currency trader and consultant before making a career transition.</p>
-          <p>After learning to write database queries in SQL and trying to teach myself C++ in the evenings, I decided to take the plunge and fully commit to becoming a developer.
-            I have a real passion for creating things and helping to solve challenges, and enjoy working in collaborative environments where teamwork is promoted.</p>
+            <p>
+                I'm a software developer with a background in finance, where I previously worked as a currency trader.
+                During this time I worked closely with different software engineering teams, teaching myself SQL as well as some basic C++ and Python in my free time.
+            </p>
+            <p>
+                I found I had a real passion for coding and decided to make a career switch, enrolling in the Flatiron School bootcamp.
+                Since then I’ve gone on to work as a full-stack engineer with experience deploying to production using AWS cloud services.
+                Currently I am working on a non-profit project, the Lending for Education in Africa Program (LEAP), which aims to help students in Africa gain access to funding for higher education.
+                I love working within creative and collaborative teams to solve complex challenges.
+            </p>
         </div>
         <Divider horizontal className='cv-divider'>
           <Header as='h2'>Technical Experience</Header>
@@ -24,13 +31,12 @@ const CV = () => {
               <p>
                 <strong>Languages: </strong>JavaScript, TypeScript, Python, Ruby, SQL, GraphQL, HTML5, CSS.
                 <br/>
-                <strong>Frameworks/Environments: </strong>React, Redux, Quart (Flask), Node, Express, Ruby on Rails, Apollo, PostgreSQL.
+                <strong>Tools & Frameworks: </strong>NodeJS, React, Docker, Express, Ruby on Rails, Quart (Flask), Apollo, Redux.
               </p>
               <p>
                 Utilising functional programming methodologies to create clean, self-documenting code that is easy to understand and maintain.
-                Experience creating RESTful APIs for user authentication, including 'MFA' via Google Authenticator. Strong command of the
-                React Life Cycle and how to utilise hooks to interact with both local and global (redux) state. Solid understanding of key css
-                features such as flex and grid as well as styled components.
+                Experience creating and deploying commercial applications across the entire tech stack, including both frontend and backend
+                development and cloud services and infrastructure with AWS.
               </p>
             </ul>
           </div>
@@ -40,10 +46,28 @@ const CV = () => {
         </Divider>
         <div className='experience-container'>
           <Segment basic>
-            <Header as='h3' floated="left">Octopus Wealth
-              <Header.Subheader>Junior Software Engineer</Header.Subheader>
+            <Header as='h3' floated="left">Volta Capital
+              <Header.Subheader>Software Engineer</Header.Subheader>
             </Header>
-            <Header as='h3' floated='right'>Mar 2019 - Present
+            <Header as='h3' floated='right'>Jan 2020 - Present
+              <Header.Subheader>London, United Kingdom</Header.Subheader>
+            </Header>
+          </Segment>
+          <div><br/>
+            <ul>
+              <li>Full-stack engineer working with a NERP stack (NodeJS, ExpressJS, React, PostgreSQL) to deliver commercial applications and tools.</li>
+              <li>Set up an RDS on AWS to store production data. Added additional layers of security through the use of a bastion host.</li>
+              <li>Set up AWS Elastic Beanstalk with Jenkins and Docker to automate CI/CD for both Staging and Production.</li>
+              <li>Built a series of tools for loan management (including risk models and repayment tracking).</li>
+            </ul>
+          </div>
+        </div>
+        <div className='experience-container'>
+          <Segment basic>
+            <Header as='h3' floated="left">Octopus Group
+              <Header.Subheader>Software Engineer</Header.Subheader>
+            </Header>
+            <Header as='h3' floated='right'>Mar 2019 - Jan 2020
               <Header.Subheader>London, United Kingdom</Header.Subheader>
             </Header>
           </Segment>
