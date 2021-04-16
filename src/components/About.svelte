@@ -40,5 +40,9 @@
             font-size: 16px;
             padding: 0 10px;
         }
+
+        .container {
+            margin-top: 40px;
+        }
     }
 </style>

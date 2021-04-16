@@ -36,6 +36,7 @@
         }
 
         .icon-wrapper {
+            align-items: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
