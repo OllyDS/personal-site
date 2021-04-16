@@ -160,10 +160,11 @@
         }
 
         .image {
-            width: 360px;
+            width: 320px;
         }
 
         .iphone-image {
+            height: 320px;
             padding: 0 4px;
         }
 
