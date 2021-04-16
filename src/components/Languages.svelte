@@ -6,7 +6,7 @@
     <img alt="typescript" class="icon" src="icons/ts.png" />
     <img alt="python" class="icon" src="icons/python.png" />
     <img alt="ruby" class="icon" src="icons/ruby.png" />
-    <img alt="ruby on rails" class="icon" src="icons/rails.webp" />
+    <img alt="ruby on rails" class="icon" src="icons/rails.png" />
     <img alt="svelte" class="icon" src="icons/svelte.png" />
     <img alt="react" class="icon" src="icons/react.png" />
     <img alt="express" class="icon" src="icons/express.png" />
@@ -26,22 +26,13 @@
     }
 
     .icon-wrapper {
-        display: flex;
-        /* flex-direction: row; */
-        flex-wrap: wrap;
-        justify-content: center;
         margin: 40px auto;
-        max-width: 800px;
         padding: 0 120px;
     }
 
     @media (max-width: 612px) {
         .icon {
             width: 60px;
-        }
-
-        .icon-wrapper {
-            padding: 0 40px;
         }
     }
 </style>
