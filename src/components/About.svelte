@@ -42,7 +42,13 @@
         }
 
         .container {
-            margin-top: 40px;
+            margin-top: 2em;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .container {
+            margin-top: 8em;
         }
     }
 </style>
