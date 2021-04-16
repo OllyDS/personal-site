@@ -11,8 +11,8 @@
         sector the perfect place to call home.
     </p>
     <p class="about-me-text">
-        Below is a collection of some of the languages I've used in production
-        environments as well some of the projects I've worked on.
+        Below is a collection of just a few of the languages and frameworks I've
+        used in production environments.
     </p>
     <Languages />
 </section>

@@ -103,7 +103,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 120px;
+        margin: 120px auto auto;
+        max-width: 1000px;
     }
 
     .content-wrapper {
