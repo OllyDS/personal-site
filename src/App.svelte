@@ -1,75 +1,123 @@
 <script lang="ts">
-    import About from "./components/About.svelte";
-    import Home from "./components/Home.svelte";
-    import Projects from "./components/Projects.svelte";
+  import Hero from './components/Hero.svelte';
+  import About from './components/About.svelte';
+  import Experience from './components/Experience.svelte';
+  import Stack from './components/Stack.svelte';
+  import Contact from './components/Contact.svelte';
 
-    export let menu: number = 1;
+  const currentYear = new Date().getFullYear();
 </script>
 
-<main class="container">
-    <ul class="navbar">
-        <li>
-            <a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a>
-        </li>
-        <li>
-            <a href="/" on:click|preventDefault={() => (menu = 2)}>About</a>
-        </li>
-        <li>
-            <a href="/" on:click|preventDefault={() => (menu = 3)}>Projects</a>
-        </li>
-    </ul>
-    {#if menu === 1}
-        <Home />
-    {:else if menu === 2}
-        <About />
-    {:else if menu === 3}
-        <Projects />
-    {:else}
-        <h1>Page Not Found</h1>
-    {/if}
+<header class="topbar">
+  <a class="topbar-logo" href="#top">
+    <span>//</span> olly de sousa
+  </a>
+  <nav class="topbar-nav">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <Hero />
+  <About />
+  <Experience />
+  <Stack />
+  <Contact />
 </main>
 
+<footer>
+  <span>&copy; {currentYear} Oliver de Sousa Sequeira</span>
+  <span>London, United Kingdom</span>
+</footer>
+
 <style>
-    .container {
-        background: linear-gradient(#262626, #ffffff);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-    }
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(1.5rem, 4vw, 4rem);
+    height: var(--topbar-h);
+    background: rgba(10, 12, 16, 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
 
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        font-family: "Rubik";
-        font-size: 18px;
-        justify-content: center;
-        margin: 20px 80px;
-        padding: 0;
-    }
+  .topbar-logo {
+    color: var(--text-primary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    transition: color 0.3s;
+  }
 
-    .navbar li {
-        list-style: none;
-        padding: 10px 40px;
-    }
+  .topbar-logo span {
+    color: var(--accent);
+  }
 
-    .navbar a {
-        color: white;
-        text-decoration: none;
-    }
+  .topbar-logo:hover,
+  .topbar-logo:focus-visible {
+    color: var(--accent);
+    outline: none;
+  }
 
-    a:hover {
-        color: darkorange;
-    }
+  .topbar-nav {
+    display: flex;
+    gap: 2rem;
+  }
 
-    @media (max-width: 1024px) {
-        .navbar {
-            margin: 10px 20px;
-        }
+  .topbar-nav a {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
 
-        .navbar li {
-            list-style: none;
-            padding: 0 10px;
-        }
+  .topbar-nav a:hover,
+  .topbar-nav a:focus-visible {
+    color: var(--accent);
+    outline: none;
+  }
+
+  main {
+    padding-top: var(--topbar-h);
+  }
+
+  footer {
+    padding: 2rem clamp(1.5rem, 8vw, 10rem);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+
+  @media (max-width: 900px) {
+    .topbar-nav {
+      display: none;
     }
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
 </style>
